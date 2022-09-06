@@ -4,10 +4,8 @@ from flask import Flask, render_template, Response
 import cv2
 
 app=Flask(__name__)
-eye_cascPath = 'C:/Users/PQ-CO/Desktop/Closed-Eye-Detection-with-opencv-master/haarcascade_eye_tree_eyeglasses.xml'  #eye detect model
-face_cascPath = 'C:/Users/PQ-CO/Desktop/Closed-Eye-Detection-with-opencv-master/haarcascade_frontalface_alt.xml'  #face detect model
-faceCascade = cv2.CascadeClassifier(face_cascPath)
-eyeCascade = cv2.CascadeClassifier(eye_cascPath)
+faceCascade = cv2.CascadeClassifier('Haarcascades/haarcascade_frontalface_alt.xml')
+eyeCascade = cv2.CascadeClassifier('Haarcascades/haarcascade_eye_tree_eyeglasses.xml.xml')
 
 cap = cv2.VideoCapture(0)
 
