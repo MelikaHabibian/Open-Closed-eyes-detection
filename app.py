@@ -5,7 +5,7 @@ import cv2
 
 app=Flask(__name__)
 faceCascade = cv2.CascadeClassifier('Haarcascades/haarcascade_frontalface_alt.xml')
-eyeCascade = cv2.CascadeClassifier('Haarcascades/haarcascade_eye_tree_eyeglasses.xml.xml')
+eyeCascade = cv2.CascadeClassifier('Haarcascades/haarcascade_eye_tree_eyeglasses.xml')
 
 cap = cv2.VideoCapture(0)
 
